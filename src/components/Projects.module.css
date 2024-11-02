@@ -1,0 +1,1074 @@
+.wrapper__projects {
+    position: relative;
+}
+
+.spiner__container {
+    position: fixed;
+    top: 50vh;
+    max-width: 900px;
+    width: 100%;
+    z-index: 100;
+}
+
+.text__loading {
+    font-size: 20px;
+    font-family: "Gothic A1", sans-serif;
+    color: white;
+    z-index: 100;
+}
+
+/* Overlay advice start */
+
+.overlay__for_advice {
+    transition: 2s;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(10 10 10 / 90%);
+    z-index: 80;
+    backdrop-filter: blur(8px);
+    margin-right: 13px;
+}
+
+.overlay__for_advice__wrapper {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+}
+
+.instruction__advice_container {
+    position: relative; 
+    top: 185px; 
+    right: 6px;
+}
+
+.wrapper__icon_visibility__overlay {
+    position: absolute; 
+    top: 0;
+    right: 0;
+}
+
+.text__exit_overlay {
+    font-family: "Gothic A1", sans-serif; /* Шрифт */
+    font-size: 18px; /* Размер шрифта */
+    position: fixed; /* Фиксированное положение */
+    top: 50%; /* Середина экрана по вертикали */
+    left: 50%; /* Середина экрана по горизонтали */
+    transform: translate(-50%, -50%); /* Сдвигаем текст в центр */
+    max-width: 90%; /* Максимальная ширина блока */
+    width: 100%; /* Ширина блока на весь экран */
+    text-align: center; /* Центрируем текст */
+    color: rgba(255, 255, 255, 0.98); /* Цвет текста */
+    z-index: 22; /* Положение над другими элементами */
+    transition: opacity 0.9s ease-out; /* Плавный переход для прозрачности */
+    opacity: 0; /* Изначальная прозрачность */
+}
+
+.animation__text_exit {
+    opacity: 1;
+}
+
+/* Advice start */
+
+.advice__container {
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    width: 300px;
+    z-index: 50;
+    transition: opacity 0.9s ease-out;
+    opacity: 0;
+}
+
+.animation__advice_container {
+    opacity: 1;
+}
+
+.advice__text {
+    font-family: "Gothic A1", sans-serif;
+    font-size: 16px;
+    position: absolute;
+    top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0;
+    margin-right: 7px;
+    max-width: 250px;
+    width: 100%;
+    margin-top: 0;
+    color: white;
+}
+
+.finger__icon_container {
+    margin-right: 5px;
+    animation-name: adviceAnimation;
+    animation: adviceAnimation 5.5s ease-out forwards;
+    transition: opacity 0.9s ease-out;
+    opacity: 0;
+}
+
+.animation__finger_icon__container {
+    opacity: 1;
+}
+
+@keyframes adviceAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(17px);
+        scale: 1.6;
+    }
+    25% {
+        opacity: 0;
+        transform: translateY(17px);
+        scale: 1.6;
+    }
+    30% {
+        opacity: 1;
+        transform: translateY(17px);
+        scale: 1.6;
+    }
+    35% {
+        opacity: 1;
+        transform: translateY(17px);
+        scale: 1.6;
+    }
+    45% {
+        opacity: 1;
+        transform: translateY(7px);
+        scale: 1.6;
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(7px);
+        scale: 1.6;
+    }
+    55% {
+        opacity: 0.3;
+        scale: 1.6;
+        transform: translateY(7px);
+
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(7px);
+        scale: 1.6;
+    }
+    65% {
+        opacity: 0.3;
+        scale: 1.6;
+        transform: translateY(7px);
+    }
+    70% {
+        opacity: 1;
+        transform: translateY(7px);
+        scale: 1.6;
+    }
+    75% {
+        opacity: 1;
+        transform: translateY(7px);
+        scale: 1.6;
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(7px);
+        scale: 1.6;
+    }
+    85% {
+        opacity: 0.3;
+        scale: 1.6;
+        transform: translateY(7px);
+    }
+    90% {
+        opacity: 1;
+        transform: translateY(7px);
+        scale: 1.6;
+    }
+    95% {
+        opacity: 0.3;
+        transform: translateY(7px);
+        scale: 1.6;
+    }
+    100% {
+        opacity: 1;
+        scale: 1.6;
+        transform: translateY(7px);
+
+    }
+}
+
+/*  */
+
+.portfolio__title {
+    margin: 0px; 
+    padding-top: 100px;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: "Gothic A1", sans-serif;
+}
+
+.progects__title {
+    margin: 0px; 
+    margin-top: 58px;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: "Gothic A1", sans-serif;
+}
+
+.types__view_portfolio__container {
+    padding-top: 45px; /* 38 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titles__types_portfolio__container {
+    display: flex;
+    margin-bottom: 13px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.titles__types_portfolio__container_fixed {
+    position: fixed;
+    top: 60px; /* 61 */
+    z-index: 13;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+}
+
+/*  */
+
+.button__sorting_container {
+    display: flex;
+}
+
+/*  */
+
+.button__view_portfolio__container {
+    width: 32px;
+    margin-left: 20px;
+}
+
+.button__view_portfolio__container_inactive {
+    pointer-events: none;
+    cursor: default;
+}
+
+
+.icon__button_view__portfolio {
+    max-width: 28px;
+    width: 100%;
+}
+
+/* Cells portfolio start */
+
+.cells__portfolio_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; /* Это добавит пространство между элементами */
+}
+
+.block__container_card__portfolio {
+    flex: 1 1 calc(50% - 20px);
+}
+
+.cell__portfolio {
+    flex: 1 1 calc(50% - 20px); 
+    min-height: 205px;
+    border-radius: 23px;
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: .4s;
+    overflow: hidden;
+    outline-offset: -2px;
+    outline: 4px solid #add8e600;
+    cursor: pointer;
+}
+
+.cell__portfolio:hover .transparency__cell_portfolio {
+    opacity: 0.9;
+    transition: .4s;
+    overflow: hidden;
+    border-radius: 0px;
+}
+
+.cell__portfolio:hover {
+    outline: 4px solid rgba(0, 0, 0, 0.744);
+    outline-offset: -2px;   
+    transition: .4s;  
+
+}
+
+/* animation miniature rendering start */
+
+/* animation miniature start */
+
+.cell__portfolio_animation__start {
+    animation: pushLeft .5s ease-out forwards;
+}
+
+@keyframes pushLeft {
+    from {
+      opacity: 0; /* Начальная прозрачность */
+      transform: translateX(-100px); /* Начальное положение */
+    }
+    to {
+      opacity: 1; /* Конечная прозрачность */
+      transform: translateX(0px); /* Конечное положение */
+    }
+}
+
+.cell__portfolio_animation__start:nth-child(2n) {
+    animation: pushRight .5s ease-out forwards;
+}
+
+@keyframes pushRight {
+    from {
+      opacity: 0; /* Начальная прозрачность */
+      transform: translateX(100px); /* Начальное положение */
+    }
+    to {
+      opacity: 1; /* Конечная прозрачность */
+      transform: translateX(0px); /* Конечное положение */
+    }
+}
+
+/* animation miniature finish */
+
+.cell__portfolio_animation__finish {
+    animation: exitLeft .5s ease-out forwards;
+}
+
+@keyframes exitLeft {
+    from {
+      opacity: 1; /* Начальная прозрачность */
+      transform: translateX(0px); /* Начальное положение */
+    }
+    to {
+      opacity: 0; /* Конечная прозрачность */
+      transform: translateX(-100px); /* Конечное положение */
+    }
+}
+
+
+.cell__portfolio_animation__finish:nth-child(2n) {
+    animation: exitRight .5s ease-out forwards;
+}
+
+@keyframes exitRight {
+    from {
+      opacity: 1; /* Начальная прозрачность */
+      transform: translateX(0px); /* Начальное положение */
+    }
+    to {
+      opacity: 0; /* Конечная прозрачность */
+      transform: translateX(100px); /* Конечное положение */
+    }
+}
+
+/*  */
+
+.transparency__cell_portfolio {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+    z-index: 1;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.944);
+}
+
+.cell__portfolio_name {
+    z-index: 2;
+    color: #add8e6;
+    width: 300px;
+    padding: 20px;
+    margin: 0;
+}
+
+.cell__portfolio_category {
+    z-index: 2;
+    color: #add8e6;
+    border: 5px solid #add8e6;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Description site start  */
+
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 70;
+    backdrop-filter: blur(5px);
+}
+
+.description__site_container {
+    position: relative;
+    padding: 50px 13px 65px 13px;
+    background-color: white;
+    max-width: 550px;
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 15px;
+    z-index: 20;
+}
+
+.description__site_image__container {
+    width: 100%;
+    min-height: 200px;
+    background-size: cover;
+}
+
+.title__description_site {
+    font-family: "Gothic A1", sans-serif;
+    font-size: 24px;
+    line-height: 26px;
+    margin: 18px 0px 12px 0px;
+}
+
+.tasks__title_description {
+    color: #6FB3E0;
+    font-family: "Gothic A1", sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.result__title_description {
+    color: #e4b472;
+    font-family: "Gothic A1", sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.description_category {
+    font-family: "Gothic A1", sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.titles__tasks_container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.item__tasks_text__container {
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.item__text_task {
+    padding: 0;
+    list-style-type: disc;
+}
+
+.content_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Выравнивает текст и иконку по вертикали */
+    padding-right: 10px;
+}
+
+.item__text {
+    font-family: "Gothic A1", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+.description__info_link {
+    font-family: "Gothic A1", sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.description__link {
+    font-family: "Gothic A1", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: black;
+    text-decoration: none;
+    background-color: #b8b8b8;
+    padding: 9px;
+    text-align: center;
+    border-radius: 9px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .4s;
+    user-select: none;
+}
+
+.description__link:hover {
+    background-color: #979797;
+    transition: .4s;
+    user-select: none;
+}
+
+/*  */
+
+  .devaise__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+/*  */
+
+.container__devaise {
+    display: flex;
+    height: 270px;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.imac_container {
+    border-bottom: 26px solid grey;
+    height: 186px;
+    max-width: 290px;
+    position: relative;
+    border-radius: 10px;
+    z-index: 2;
+}
+  
+  .imac__container_animation {
+    animation: imacPushRight .5s ease-out forwards;
+}
+
+@keyframes imacPushRight {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(35px);
+    }
+}
+
+.imac__container_animation__off {
+    transform: translateX(35px);
+}
+
+
+  .imac_screen {
+    height: 160px;
+    width: 264px;
+    background-size: cover;
+    background-position: center; /* Центрирует изображение */
+  }
+  
+  .imac_chin {
+    border: 13px solid black;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .nog__wrapper {
+    position: absolute;
+    bottom: -95px;
+    left: 97px;
+    z-index: 1;
+} 
+
+.nog__container {
+    position: relative;
+}
+
+  .nog__top {
+    position: absolute;
+    top: -6px;
+    left: 2px;
+    width: 93px;
+    height: 22px;
+    transform: perspective(700px) rotateX(0deg);
+    background: linear-gradient(to bottom, rgba(67, 67, 67) 0%, rgb(128, 128, 128, 0.775) 100%);
+  }
+
+  .nog {
+    width: 97px;
+    height: 63px;
+    background: linear-gradient(to bottom, rgba(128, 128, 128, 0.775) 0%, rgb(67, 67, 67) 100%); /* Градиент сверху вниз */
+    transform: perspective(700px) rotateX(59deg);
+    border-radius: 0 0 12px 12px;
+  }
+
+/* proba mobile start */
+
+.mobile__wrapper {
+    margin-top: 24px;
+    width: 120px;
+    height: 243px;
+    background-color: #606467;
+    border-radius: 18px;
+    position: relative;
+    z-index: 3;
+}
+
+.mobile__wrapper_animation {
+    animation: mobilePushLeft .5s ease-out forwards;
+}
+
+@keyframes mobilePushLeft {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-35px);
+    }
+}
+
+.mobile__wrapper_animation__off {
+    transform: translateX(-35px);
+}
+
+
+.mobile__wrapper::before {
+    content: '';
+    width: 0.7px;
+    height: 10px;
+    background-color: #606467;
+    position: absolute;
+    top: 36px;
+    left: -0.7px;
+    z-index: 70;
+}
+
+.mobile__wrapper::after {
+    content: '';
+    width: 0.7px;
+    height: 28px;
+    background-color: #606467;
+    position: absolute;
+    top: 57px;
+    right: -0.7px;
+    z-index: 70;
+}
+
+.buttonOne {
+    width: 0.7px;
+    height: 20px;
+    background-color: #606467;
+    position: absolute;
+    top: 57px;
+    left: -0.7px;
+    z-index: 70;
+}
+
+.buttonTwo {
+    width: 0.7px;
+    height: 20px;
+    background-color: #606467;
+    position: absolute;
+    top: 84px;
+    left: -0.7px;
+    z-index: 70;
+}
+
+.frame__mobile {
+    background-color: #e2e3e4;
+    width: 118px;
+    height: 241px;
+    margin: auto;
+    border-radius: 17px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.frame__mobile::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    left: -1px;
+    top: 10%;
+    background-color: rgba(51, 51, 51, .25);
+    z-index: 10;
+}
+
+.frame__mobile::after {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    left: -1px;
+    bottom: 10%;
+    background-color: rgba(51, 51, 51, .25);
+    z-index: 10;
+}
+
+.screen__mobile {
+    border: 5px solid #222;
+    width: 106px;
+    height: 229px;
+    border-radius: 17px;
+    margin: 0 auto;
+    z-index: 13;
+    position: relative;
+    background-size: cover;
+}
+
+.camera__microfon_wrapper {
+    position: absolute;
+    background-color: #222;
+    height: 9px;
+    width: 58px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    left: 25px;
+    top: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.speaker {
+    background-color: #444;
+    border-radius: 5px;
+    height: 2px;
+    width: 17px;
+    margin-top: -6px;
+    margin-left: 8px;
+    margin-right: 4px;
+}
+
+.camera {
+    background-color: #444;
+    border-radius: 50%;
+    height: 4px;
+    width: 4px;
+    margin-top: -5px;
+}
+
+/* Card projects */
+
+.card__projects_container:hover .hide__button_next__image_card__projects {
+    opacity: 1;
+}
+
+.card__projects_container:hover .hide__button_back__image_card__projects {
+    opacity: 1;
+}
+
+.button__back_image__card_projects {
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    bottom: 0;
+    width: 100px;
+    background-color: #9898983d;
+    cursor: pointer;
+}
+
+.button__next_image__card_projects {
+    position: absolute; 
+    top: 0;
+    right: 0; 
+    bottom: 0;
+    width: 100px;
+    background-color: #9898983d;
+    cursor: pointer;
+}
+
+.hide__button_back__image_card__projects {
+    transition: opacity 0.3s ;
+    opacity: 0;
+}
+
+.hide__button_next__image_card__projects {
+    transition: opacity 0.3s ;
+    opacity: 0;
+}
+
+/* media start */
+
+@media (max-width: 992px) {
+    .button__back_image__card_projects {
+        background-color: #98989800;
+    }
+
+    .button__next_image__card_projects {
+        background-color: #98989800;
+    }
+
+    .instruction__advice_container {
+        right: -1px;
+    }
+}
+
+@media (max-width: 930px) {
+    .cells__portfolio_container {
+        gap: 20px; /* Это добавит пространство между элементами */
+    }
+
+    .block__container_card__portfolio {
+        flex: 1 1 calc(50% - 10px); /* 2 карточки на строку */
+    }
+
+    .cell__portfolio {
+        max-width: 100%;
+        min-width: 0;
+    }
+
+}
+
+@media (max-width: 925px) {
+    .titles__types_portfolio__container_fixed {
+        width: auto;
+        right: 13px;
+        left: 13px;
+    }
+
+    .overlay__for_advice__wrapper {
+        padding: 0 13px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 847px) {
+    .mobile__wrapper::after {
+        right: -20.5px;
+    }
+
+    .container__devaise {
+        width: 390px;
+        transform: scale(0.9) translateX(-10px);
+    }
+}
+
+@media (max-width: 806px) {
+
+    .container__devaise {
+        width: 350px;
+        transform: scale(0.9) translateX(-27px);
+    }
+
+    .mobile__wrapper::after {
+        right: -61.1px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cell__portfolio_name {
+        font-size: 22px;
+        max-width: 230px;
+    }
+
+    .cell__portfolio_category {
+        font-size: 22px;
+        max-width: 230px;
+    }
+
+    .container__devaise {
+        width: 330px;
+        transform: scale(0.8) translateX(-40px);
+    }
+
+    .devaise__block {
+        justify-content: space-evenly;
+    }
+
+    .mobile__wrapper::after {
+        right: -81px;
+    }
+}
+
+@media (max-width: 685px) {
+    .container__devaise {
+        width: 410px;
+        transform: scale(1) translateX(0px);
+    }
+
+    .mobile__wrapper::after {
+        right: -1.7px;
+    }
+
+    .container__devaise {
+        padding-top: 15px;
+        padding-bottom: 35px
+    }
+}
+
+@media (max-width: 630px) {
+    .cell__portfolio_name {
+        max-width: 200px;
+        font-size: 20px;
+    }
+
+    .cell__portfolio_category {
+        max-width: 200px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .block__container_card__portfolio {
+        flex: 1 1 calc(100% - 10px); 
+    }
+
+    .cell__portfolio {
+        min-height: 250px;
+    }
+
+    .cell__portfolio_name {
+        max-width: 300px;
+        font-size: 24px;
+    }
+
+    .cell__portfolio_category {
+        max-width: 300px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 440px) {
+
+    .container__devaise {
+        width: 390px;
+        transform: scale(1) translateX(-3%);
+    }
+
+    .mobile__wrapper::after {
+        right: -21.2px;
+    }
+}
+
+@media (max-width: 415px) {
+    .container__devaise {
+        width: 350px;
+        transform: scale(1) translateX(-30px);
+    }
+
+    .mobile__wrapper::after {
+        right: -61.2px;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .cell__portfolio {
+        min-height: 235px;
+    }
+
+    .cell__portfolio_name {
+        max-width: 250px;
+        font-size: 22px;
+    }
+
+    .cell__portfolio_category {
+        max-width: 250px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container__devaise {
+        width: 288px;
+        transform: scale(0.9) translateX(-61px);
+    }
+
+    .mobile__wrapper::after {
+        right: -120.1px;
+    }
+}
+
+@media (max-width: 340px) {
+
+    .cell__portfolio {
+        min-height: 210px;
+    }
+
+    .cell__portfolio_name {
+        max-width: 210px;
+        font-size: 20px;
+    }
+
+    .cell__portfolio_category {
+        max-width: 210px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container__devaise {
+        width: 250px;
+        transform: scale(0.8) translateX(-80px);
+    }
+}
+
+@media (max-width: 305px) {
+    .button__view_portfolio__container {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 295px) {
+
+    .cell__portfolio {
+        min-height: 165px;
+    }
+
+    .cell__portfolio_name {
+        max-width: 195px;
+        font-size: 18px;
+    }
+
+    .cell__portfolio_category {
+        max-width: 195px;
+        font-size: 18px;
+    }
+}
+
+@media (max-height: 670px) {
+    .text__exit_overlay {
+        top: 55%;
+    }
+}
+
+@media (max-height: 610px) {
+    .text__exit_overlay {
+        top: 70%;
+    }
+}
+
+@media (max-height: 440px) {
+    .text__exit_overlay {
+        top: 85%;
+    }
+}

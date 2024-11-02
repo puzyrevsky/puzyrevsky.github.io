@@ -1,0 +1,101 @@
+.resume__geleral_container {
+    position: relative;
+}
+
+.page__break {
+    page-break-before: always;
+}
+
+.avoid__page_break {
+    page-break-inside: avoid;
+}
+
+.wrap {
+    margin-bottom: 45px;
+}
+
+.resume__title {
+    margin: 0 0 45px 0; 
+    padding-top: 100px;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: "Gothic A1", sans-serif;
+}
+
+.resume__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume__column_container {
+    max-width: 395px;
+    width: 100%;
+}
+
+.about__resume_container {
+    margin-bottom: 80px;
+    max-width: 340px;
+    width: 100%;
+}
+
+.list__about_resume {
+    display: flex;
+    flex-direction: column;
+}
+
+.item__about_resume {
+    display: flex;
+    padding: 0;
+}
+
+.name__resume {
+    font-family: "Gothic A1", sans-serif;
+    margin-top: 0;
+    color: #D8BFD8;
+    margin-bottom: 35px;
+}
+
+.text__about_resume {
+    margin: 0 10px 0 0;
+    font-family: "Gothic A1", sans-serif;
+    color: #C0C0C0;
+    line-height: 45px;
+
+}
+
+.link__about_resume {
+    color: #D2B48C;
+    text-decoration: none;
+    font-family: "Gothic A1", sans-serif;
+    line-height: 45px;
+}
+
+.title__section {
+    font-family: "Gothic A1", sans-serif;
+    margin-top: 45px;
+    margin-left: 10px;
+    color: #AD6F69;
+}
+
+/* media start */
+
+@media (max-width: 830px) {
+    .resume__container {
+        flex-direction: column;
+    }
+
+    .resume__column_container {
+        max-width: 100%;
+    }
+
+    .resume__column_container:last-of-type {
+        margin-top: 33px;
+        transition: .3s;
+    }
+}
+
+@media (max-width: 768px) {
+    .resume__column_container:last-of-type {
+        margin-top: 3px;
+        transition: .3s;
+    }
+}

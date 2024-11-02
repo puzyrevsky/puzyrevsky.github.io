@@ -1,0 +1,35 @@
+.project__not_found__container {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project__not_found__text {
+    color: white;
+    margin: 0px 0px 23px;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Gothic A1", sans-serif;
+    max-width: 550px;
+    word-break: break-word;
+} 
+
+.name__project_not__found {
+    font-weight: 700;
+    color: #D8BFD8;
+    font-family: "Gothic A1", sans-serif;
+}
+
+.text__display_project {
+    font-family: "Gothic A1", sans-serif;
+    color: white;
+}
+
+.image__container {
+    overflow: auto;
+}
+
+.image__container::-webkit-scrollbar {
+    display: none;
+}

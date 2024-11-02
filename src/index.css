@@ -1,3 +1,23 @@
+
+
+html {
+  background-color: #1c1f26;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+img {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Internet Explorer/Edge */
+  user-select: none;   
+}
+
+html::-webkit-scrollbar-button {
+  display: none !important;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +25,211 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  max-width: 100%;
+  overflow-x: hidden;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.slick-prev, .slick-next {
+  display: none;
+}
+
+.slick-prev::before, .slick-next::before {
+  display: none;
+}
+
+
+/* Matemasie */
+@font-face {
+  font-family: 'Matemasie';
+  src: url('./fonts/Matemasie-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Audiowide */
+@font-face {
+  font-family: 'Audiowide';
+  src: url('./fonts/Audiowide-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Gothic A1 */
+
+/* Thin */
+@font-face {
+  font-family: 'Gothic A1';
+  src: url('./fonts/GothicA1-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Extra Light */
+@font-face {
+  font-family: 'Gothic A1';
+  src: url('./fonts/GothicA1-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Light */
+@font-face {
+  font-family: 'Gothic A1';
+  src: url('./fonts/GothicA1-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Regular */
+@font-face {
+  font-family: 'Gothic A1';
+  src: url('./fonts/GothicA1-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Medium */
+@font-face {
+  font-family: 'Gothic A1';
+  src: url('./fonts/GothicA1-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* SemiBold */
+@font-face {
+  font-family: 'Gothic A1';
+  src: url('./fonts/GothicA1-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Gothic A1';
+  src: url('./fonts/GothicA1-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Extra Bold */
+@font-face {
+  font-family: 'Gothic A1';
+  src: url('./fonts/GothicA1-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Black */
+@font-face {
+  font-family: 'Gothic A1';
+  src: url('./fonts/GothicA1-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Shantell Sans */
+
+/* Light */
+@font-face {
+  font-family: 'Shantell Sans';
+  src: url('./fonts/ShantellSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Light Italic */
+@font-face {
+  font-family: 'Shantell Sans';
+  src: url('./fonts/ShantellSans-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Regular */
+@font-face {
+  font-family: 'Shantell Sans';
+  src: url('./fonts/ShantellSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Italic */
+@font-face {
+  font-family: 'Shantell Sans';
+  src: url('./fonts/ShantellSans-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Medium */
+@font-face {
+  font-family: 'Shantell Sans';
+  src: url('./fonts/ShantellSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Medium Italic */
+@font-face {
+  font-family: 'Shantell Sans';
+  src: url('./fonts/ShantellSans-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* SemiBold */
+@font-face {
+  font-family: 'Shantell Sans';
+  src: url('./fonts/ShantellSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* SemiBold Italic */
+@font-face {
+  font-family: 'Shantell Sans';
+  src: url('./fonts/ShantellSans-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Shantell Sans';
+  src: url('./fonts/ShantellSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: 'Shantell Sans';
+  src: url('./fonts/ShantellSans-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Extra Bold */
+@font-face {
+  font-family: 'Shantell Sans';
+  src: url('./fonts/ShantellSans-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Extra Bold Italic */
+@font-face {
+  font-family: 'Shantell Sans';
+  src: url('./fonts/ShantellSans-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
 }
