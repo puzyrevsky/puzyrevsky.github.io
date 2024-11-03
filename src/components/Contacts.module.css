@@ -1,0 +1,326 @@
+.contacts__wrapper {
+    position: relative;
+}
+
+.block__info_sending_form {
+    position: fixed;
+    top: 62px;
+    z-index: 30;
+    max-width: 900px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%); /* Центрирует блок по горизонтали */
+    padding: 0 16px;
+}
+
+.services__title {
+    margin: 0 0 45px 0; 
+    padding-top: 100px;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: "Gothic A1", sans-serif;
+}
+
+.cards__services_container {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card__service_container {
+    display: flex;
+    align-items: center;
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    min-width: 200px;
+    padding: 15px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 13px;
+    margin-bottom: 17px;
+    background-color: #333640;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card__service_container:hover {
+    z-index: 10;
+    transform: scale(1.09);
+    transition: 0.5s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.596);
+}
+
+.image__card_service__container {
+    position: relative;
+    height: 156px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+.image__card_service {
+    position: absolute;
+    top: 0px;  
+    
+    left: 50%;
+    transform: translate(-50%);
+    object-fit: cover;
+    max-width: 139px;
+    width: 100%;
+}
+
+.description__services_text {
+    font-size: 18px;
+    font-family: "Gothic A1", sans-serif;
+    color: #C0C0C0;
+    height: 69px;
+    margin: 16px 0 0 0 ;
+    max-width: 195px;
+    text-align: center;
+}
+
+.disappearance__description_services__text {
+    transition: opacity 0.01s;
+    opacity: 0;
+}
+
+.appearance__description_services__text {
+    transition: opacity 1.11s;
+    opacity: 1;
+}
+
+.contacts__connection_block__container {
+    display: flex;
+}
+
+.contacts__blocks_container {
+    width: 44%;
+}
+
+.contacts__title {
+    margin: 45px 0 30px 0;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: "Gothic A1", sans-serif;
+}
+
+.card__contacts_container {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 13px;
+    background-color: #333640;
+    padding: 10px;
+    padding-right: 17px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    height: 129px;
+}
+
+.card__contacts_container:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.596);
+}
+
+.card__contacts_title {
+    font-family: "Gothic A1", sans-serif;
+    color: rgb(173, 216, 230);
+    margin: 2px 0 7px 0;
+}
+
+.card__contacts_link {
+    margin: 5px 0;
+    text-decoration: none;
+    color: #66CDAA;
+    position: relative;
+    font-family: "Gothic A1", sans-serif;
+}
+
+.card__contacts_link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 1px;
+    background-color: #66CDAA;
+    width: 0px;
+    transition: width 0.3s;
+}
+
+.card__contacts_link:hover::after {
+    width: 100%;
+    transition: width 0.3s;
+}
+
+.card__contacts_text__description {
+    color: #C0C0C0;
+    margin: 9px 17px 2px 0;
+    font-family: "Gothic A1", sans-serif;
+}
+
+.form__container {
+    width: 58%;
+    margin-left: 20px;
+}
+
+.button__send_container {
+    display: flex;
+}
+
+/* media start */
+
+@media (max-width: 992px) {
+
+    .block__info_sending_form {
+        top: 58px;
+    }
+}
+
+@media (min-width: 993px) {
+    .form__container {
+      height: 643px;
+    }
+  }
+
+@media (max-width: 930px) {
+    .card__service_container:hover {
+        transform: scale(1.05);
+    }
+
+    .block__info_sending_form {
+        max-width: 97%;
+    }
+}
+
+@media (max-width: 910px) {
+    .cards__services_container {
+        gap: 16px;
+    }
+
+    .service__container {
+        flex-basis: calc(50% - 8px);
+        max-width: calc(50% - 8px);
+    }
+
+    .card__service_container {
+        max-width: 100%;
+        padding: 13px 5px;
+        margin-bottom: 0;
+    }
+
+    .card__service_container:hover {
+        transform: scale(1.03);
+    }
+
+    .image__card_service__container {
+        height: 135px;
+    }
+
+    .image__card_service {
+        max-width: 120px;
+    }
+}
+
+  @media (max-width: 811px) {
+    .form__container {
+        height: 643px;
+      }
+  }
+
+  @media (max-width: 775px) {
+    .contacts__connection_block__container {
+        flex-direction: column;
+    }
+
+    .contacts__blocks_container {
+        width: 100%;
+    }
+
+    .card__contacts_container {
+        justify-content: space-between;
+    }
+
+    .card__contacts_container:hover {
+        transform: scale(1.02);
+    }
+
+    .form__container {
+        margin: 38px auto 0;
+        width: 90%;
+    }
+
+    .button__send_container {
+        justify-content: flex-end;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contacts__connection_block__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card__service_container:hover {
+        transform: scale(1.04);
+    }
+  }
+
+  @media (max-width: 576px) {
+    .block__info_sending_form {
+        max-width: 96%;
+    }
+
+    .form__container {
+        margin-top: 38px;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0;
+    }
+  }
+
+  @media (max-width: 464px) {
+    .block__info_sending_form {
+        max-width: 95%;
+    }
+
+    .service__container {
+        flex-basis: calc(100% - 0px);
+        max-width: calc(100% - 0px);
+    }
+
+    .image__card_service__container {
+        height: 120px;
+    }
+
+    .image__card_service {
+        max-width: 105px;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .block__info_sending_form {
+        max-width: 93%;
+    }
+
+    .card__contacts_container {
+        padding-right: 10px;
+    }
+
+    .card__contacts_text__description {
+        font-size: 14px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .card__contacts_container {
+        padding-right: 5px;
+        padding: 10px 5px;
+    }
+
+    .card__contacts_link {
+        font-size: 15px;
+    }
+
+    .image__card_contact {
+        max-width: 50px;
+    }
+  }

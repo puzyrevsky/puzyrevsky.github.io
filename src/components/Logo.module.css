@@ -1,0 +1,136 @@
+.prob__cont {
+    display: flex;
+    align-items: end;
+    position: relative;
+    height: 50px;
+    width: 123px;
+    margin-top: 3px;
+    transform: scale(0.8);
+    transform-origin: left;
+}
+
+.letter__name {
+    font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 32px;
+  color: #c0c0c0c9;
+  position: absolute;
+  left: 0px;
+  margin: 0;
+  bottom: 10px;
+  z-index: 10;
+  transition: bottom 0.5s;
+  transition-delay: 0.5s;
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Internet Explorer/Edge */
+  user-select: none;         /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+.letter__last_name {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #c0c0c0c9;
+    font-size: 32px;
+    line-height: 32px;
+    margin-left: 30px;
+    margin: 0 0 0 0px;
+    position: absolute;
+    top: 8px;
+    left: 18px;
+    transition: top 0.5s, left 0.5s; 
+    transition-delay: 0.5s;
+    padding-left: 0;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+.name__end {
+    font-family: "Audiowide", sans-serif;
+    margin: 0;
+    max-width: 50px;
+    color: #c0c0c0c9;;
+    position: absolute;
+    left: 27px;
+    top: 5px;
+    font-size: 12px;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.4s ;
+    cursor: default;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+.last__name_end {
+    font-family: "Audiowide", sans-serif;
+    margin: 0;
+    color: #c0c0c0c9;;
+    max-width: 95px;
+    position: absolute;
+    left: 50px;
+    bottom: 4px;
+    z-index: 1;
+    opacity: 0;
+    font-size: 12px;
+    transition: opacity 0.4s;
+    cursor: default;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+/* animation start */
+
+.letter__name_animation {
+    bottom: 16px;
+    transition: bottom 0.5s, left 0s 1s;
+}
+
+.letter__last_name__animation {
+    top: 16px;
+    left: 25px;
+    transition: top 0.5s, left 0.5s;
+    z-index: 2;
+}
+
+.name__end_animation {
+    opacity: 1;
+    transition: opacity 0.5s ease 1s;
+}
+
+.last__name_end__animation {
+    opacity: 1;
+    transition: opacity 0.5s ease 1s;
+}
+
+
+@keyframes letterName {
+    from {
+        bottom: 6px;
+    } 
+    to {
+        bottom: 16px;
+    }
+}
+
+@keyframes letterLastName {
+    from {
+        top: 6px;
+    left: 22px;
+    } 
+    to {
+        top: 16px;
+    left: 28px;
+    }
+}

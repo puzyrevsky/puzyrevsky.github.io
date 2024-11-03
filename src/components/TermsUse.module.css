@@ -1,0 +1,85 @@
+.terms__use_container {
+    position: relative;
+}
+
+.title {
+    margin: 0 0 45px 0; 
+    padding-top: 100px;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: "Gothic A1", sans-serif;
+}
+
+.subtitle {
+    font-family: "Gothic A1", sans-serif;
+    color: #D8BFD8;
+    margin: 0 0 25px 0;
+    font-size: 24px;
+}
+
+.name__text {
+    font-family: "Gothic A1", sans-serif;
+    color: #C0C0C0;
+    font-size: 22px;
+}
+
+.text {
+    color: #C0C0C0;
+    font-size: 20px;
+    font-family: "Gothic A1", sans-serif;
+    margin: 0;
+    padding: 0 0 45px 0;
+}
+
+.list__container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    padding-bottom: 45px;
+}
+
+.list__item:first-of-type {
+    padding-left: 10px;
+}
+
+.list__item {
+    color: #C0C0C0;
+    font-size: 20px;
+    font-family: "Gothic A1", sans-serif;
+    list-style-type: disc;
+    padding-left: 10px;
+}
+
+.contacts__email_container {
+    display: flex;
+}
+
+.email {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Gothic A1", sans-serif;
+    margin: 0 0 45px 5px;
+    color: #f1995a;
+    transition: 0.3s;
+}
+
+.email:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+/* media start */
+
+@media (max-width: 470px) {
+    .contacts__email_container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .email {
+        margin-left: 0;
+    }
+
+    .email__text {
+        padding: 0 0 5px 0;
+    }
+}

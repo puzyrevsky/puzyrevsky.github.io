@@ -1,0 +1,414 @@
+::-webkit-scrollbar {
+  width: 13px; /* Установка ширины вертикального скроллбара */
+  height: 5px; /* Установка высоты горизонтального скроллбара */
+}
+
+::-webkit-scrollbar-track {
+  background: #333640; /* Цвет дорожки скроллбара */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4b5058; /* Цвет активной части скроллбара */
+  border-radius: 10px;
+  /* border: 2px solid #f1f1f1; Создание "неактивного" вида скроллбара */
+  border: 3px solid rgba(255, 255, 255, 0.1); /* светло-серый с прозрачностью */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #5a5f66; /* Цвет ползунка при наведении */
+}
+
+
+
+.no__scroll::-webkit-scrollbar-track {
+  background: #282c34; /* Цвет дорожки скроллбара */
+}
+
+.no__scroll::-webkit-scrollbar-thumb {
+  background-color: #4b505800;
+  border: 3px solid rgba(255, 255, 255, 0);
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.wrapper__app {
+  position: relative;
+}
+
+.switching__language_button__container {
+  height: 60px;
+  width: 75px;
+  border-radius: 35px 0 0 35px;
+  position: fixed;
+  bottom: 130px;
+  right: 0px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 7px;
+  background-color: rgba(133, 193, 233, 0.7); /* Прозрачный небесно-голубой */
+  transition: .3s;
+  cursor: pointer;
+}
+
+.switching__language_button__container_activ {
+  height: 60px;
+  width: 75px;
+  border-radius: 35px 0 0 35px;
+  position: fixed;
+  bottom: 130px;
+  right: 0px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 7px;
+  background-color: rgba(133, 193, 233, 0.7); /* Прозрачный небесно-голубой */
+  transition: .3s;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.switching__language_button__container:hover {
+  background-color: #5aaeefa7;
+  transition: .3s;
+}
+
+.icon__language_container {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon__language_container__activ {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: rotateIconLanguage 0.8s forwards;
+}
+
+@keyframes rotateIconLanguage {
+  from {
+    transform: rotate(0deg); /* Блок начинает за пределами экрана справа */
+  }
+  to {
+    transform: rotate(360deg); /* Конечная позиция блока */
+  }
+}
+
+@keyframes skillProgress {
+  from {
+    width: 0px; /* Блок начинает за пределами экрана справа */
+  }
+  to {
+    width: 100px; /* Конечная позиция блока */
+  }
+}
+
+.text__language {
+    writing-mode: vertical-rl;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #282c34;
+    padding-left: 4px;
+    user-select: none; 
+}
+
+.slick-prev, .slick-next {
+  display: none;
+}
+
+.slick-prev::before, .slick-next::before {
+  display: none;
+}
+
+.switching__star_button__container_activ {
+  height: 60px;
+  width: 75px;
+  border-radius: 35px 0 0 35px;
+  position: fixed;
+  bottom: 62px;
+  right: 0px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 7px;
+  background-color: rgba(66, 80, 99, 0.7); /* Прозрачный небесно-голубой */
+  transition: .3s;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.switching__star_button__container {
+  height: 60px;
+  width: 75px;
+  border-radius: 35px 0 0 35px;
+  position: fixed;
+  bottom: 62px;
+  right: 0px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 7px;
+  background-color: rgba(66, 80, 99, 0.7); /* Прозрачный небесно-голубой */
+  transition: .3s;
+  cursor: pointer;
+}
+
+.switching__star_button__container:hover {
+  background-color: rgba(79, 98, 117, 1);
+  transition: .3s;
+}
+
+
+.icon__star_container {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon__star_container__activ {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: rotateIconStar 0.8s forwards;
+}
+
+@keyframes rotateIconStar {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(-1);
+  }
+}
+
+
+
+
+
+.no__scroll {
+  overflow-y: hidden;
+}
+
+html.no__scroll {
+  overflow-y: hidden;
+}
+
+.no__scroll_for__modal_rating {
+  overflow: hidden;
+}
+
+.modal__window_rating__container_overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  z-index: 120;
+  overflow-x: hidden;
+  padding-right: 13px;
+  padding-left: 13px;
+}
+
+.modal__window_rating__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333640;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 13px;
+  padding: 30px;
+  position: relative;
+  opacity: 1;
+  max-width: 410px;
+  width: 100%;
+  height: 280px;
+  box-sizing: border-box;
+}
+
+.modal__window_rating__container_transparency__not_view {
+  opacity: 0;
+}
+
+.button__pointer_close__modal_window__container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.text__buttons_modal__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.buttons__modal_window__rating_container {
+  display: flex;
+  width: 100%;
+  gap: 0px 8px;
+  justify-content: flex-end;
+}
+
+.window_rating__container {
+  padding-top: 20px;
+}
+
+.text__modal_rating__title {
+  margin-top: 0;
+  text-align: center;
+  font-family: "Gothic A1", sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.text__modal_rating {
+  text-align: center;
+  font-family: "Gothic A1", sans-serif;
+  color: #C0C0C0;
+}
+
+/* media start */
+
+@media (max-width: 992px) {
+  .switching__language_button__container {
+    bottom: 8%; 
+    transform: scale(0.8);
+    right: -8px;
+    background-color: rgba(133, 193, 233, 0.45);
+  }
+
+  .switching__language_button__container_activ {
+    bottom: 8%; 
+    transform: scale(0.8);
+    right: -8px;
+    background-color: rgba(133, 193, 233, 0.45);
+  }
+  
+  .switching__star_button__container_activ {
+    bottom: 2%;
+    transform: scale(0.8);
+    background-color: rgba(66, 80, 99, 0.45);
+    right: -8px;
+  }
+
+  .switching__star_button__container {
+    bottom: 2%;
+    transform: scale(0.8);
+    background-color: rgba(66, 80, 99, 0.45);
+    right: -8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .switching__star_button__container_activ {
+    display: none;
+  }
+
+  .switching__star_button__container {
+    display: none;
+  }
+
+  .switching__language_button__container {
+    bottom: 4%;
+  }
+
+  .switching__language_button__container_activ {
+    bottom: 4%;
+  }
+}
+
+@media (max-width: 410px) {
+  .modal__window_rating__container {
+    height: 295px;
+  }
+}
+
+@media (max-width: 370px) {
+  .modal__window_rating__container {
+    height: 310px;
+  }
+
+  .text__modal_rating__title {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 325px) {
+  .modal__window_rating__container {
+    height: 330px;
+  }
+
+}
+
+@media (max-height: 830px) and (max-width: 992px) {
+  .switching__language_button__container {
+    bottom: 70px;
+  }
+
+  .switching__language_button__container_activ {
+    bottom: 70px;
+  }
+}

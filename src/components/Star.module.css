@@ -1,0 +1,25 @@
+.star {
+    position: absolute;
+    background: #ffffff; /* Белый цвет звезд */
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ffffff; /* Светящаяся тень для звезд */
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: twinkle 2.5s infinite alternate; /* Анимация мерцания */
+    z-index: 1;
+}
+
+@keyframes twinkle {
+    from {
+        opacity: 0.5;
+        transform: translateY(3px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.star:hover {
+    transform: scale(1.5); /* Увеличиваем размер звезды при наведении */
+    box-shadow: 0 0 20px #d3d3d3; /* Увеличиваем светящуюся тень при наведении */
+}

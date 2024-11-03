@@ -1,0 +1,9 @@
+.my__custom_class {
+    width: 100% !important;
+    flex: 1 1 calc(50% - 20px) !important;
+    max-width: calc(50% - 20px) !important;
+    min-width: 200px !important;
+    min-height: 205px !important;
+}
+
+
